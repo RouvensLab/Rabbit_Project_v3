@@ -1,0 +1,511 @@
+<?xml version="1.0" ?>
+<robot name="_Compleat_Bunny_replica_v2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find _Compleat_Bunny_replica_v2_light_v5)/urdf/materials.xacro" />
+<xacro:include filename="$(find _Compleat_Bunny_replica_v2_light_v5)/urdf/_Compleat_Bunny_replica_v2.trans" />
+<xacro:include filename="$(find _Compleat_Bunny_replica_v2_light_v5)/urdf/_Compleat_Bunny_replica_v2.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.0014417431249774725 0.004999997983679286 0.004755497739543159" rpy="0 0 0"/>
+    <mass value="0.01"/>
+    <inertia ixx="3e-06" iyy="7.3e-05" izz="7.4e-05" ixy="0.0" iyz="-0.0" ixz="-2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/base_link_3dless_com_simplified.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Spine_joint_Component3_v1_1">
+  <inertial>
+    <origin xyz="-0.005203805342504343 0.004499997972388137 0.0006915506733851796" rpy="0 0 0"/>
+    <mass value="0.01"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.046041 -0.0005 -0.003472" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/Spine_joint_Component3_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.046041 -0.0005 -0.003472" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/Spine_joint_Component3_v1_1_3dless_com_simplified.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Spine_joint_Component5_v1_1">
+  <inertial>
+    <origin xyz="0.005159288590564685 0.0044999979723882744 0.00097270733531788" rpy="0 0 0"/>
+    <mass value="0.01"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.048924 -0.0005 -0.006039" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/Spine_joint_Component5_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.048924 -0.0005 -0.006039" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/Spine_joint_Component5_v1_1_3dless_com_simplified.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Spine_joint_Component1_v1_1">
+  <inertial>
+    <origin xyz="-0.015221625191204895 -3.115991847046917e-07 -0.0018911922443372105" rpy="0 0 0"/>
+    <mass value="0.01"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="2e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.060036 -0.005 -0.003093" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/Spine_joint_Component1_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.060036 -0.005 -0.003093" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/Spine_joint_Component1_v1_1_3dless_com_simplified.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Spine_joint_Component6_v1_1">
+  <inertial>
+    <origin xyz="0.0148668285405648 -1.997325344178791e-09 -0.0009990335663582614" rpy="0 0 0"/>
+    <mass value="0.01"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="2e-06" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.062919 -0.005 -0.006418" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/Spine_joint_Component6_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.062919 -0.005 -0.006418" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/Spine_joint_Component6_v1_1_3dless_com_simplified.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Top_v2_1">
+  <inertial>
+    <origin xyz="0.01546951348298585 0.0098937982542903 -0.023739664442288033" rpy="0 0 0"/>
+    <mass value="0.2"/>
+    <inertia ixx="0.000479" iyy="0.000189" izz="0.00037" ixy="1e-06" iyz="-1e-06" ixz="7e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.086911 0.005 -0.007067" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/Top_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.086911 0.005 -0.007067" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/Top_v2_1_3dless_com_simplified.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Head_v1_1">
+  <inertial>
+    <origin xyz="0.011934149175224798 0.009988927947094224 0.04293184406752427" rpy="0 0 0"/>
+    <mass value="0.1"/>
+    <inertia ixx="0.000781" iyy="0.001593" izz="0.001212" ixy="0.0" iyz="-0.0" ixz="0.000526"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.100905 0.005 -0.007445" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/Head_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.100905 0.005 -0.007445" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/Head_v1_1_3dless_com_simplified.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="belly_right_v3_1">
+  <inertial>
+    <origin xyz="0.036975085192111144 -0.010874582640070355 -0.02408903382906449" rpy="0 0 0"/>
+    <mass value="0.125"/>
+    <inertia ixx="5.2e-05" iyy="7.2e-05" izz="5.6e-05" ixy="4e-06" iyz="-9e-06" ixz="8e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.008555 0.0025 -0.004485" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/belly_right_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.008555 0.0025 -0.004485" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/belly_right_v3_1_3dless_com_simplified.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="belly_left_v3_1">
+  <inertial>
+    <origin xyz="0.036975085289092824 0.010874579030013667 -0.024089033406386535" rpy="0 0 0"/>
+    <mass value="0.125"/>
+    <inertia ixx="5.2e-05" iyy="7.2e-05" izz="5.6e-05" ixy="-4e-06" iyz="9e-06" ixz="8e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.008555 -0.0125 -0.004485" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/belly_left_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.008555 -0.0125 -0.004485" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/belly_left_v3_1_3dless_com_simplified.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Bunny_Bottom_Leg_v1_1">
+  <inertial>
+    <origin xyz="0.005000069062520374 0.004864946865656555 -0.05395632641844571" rpy="0 0 0"/>
+    <mass value="0.009"/>
+    <inertia ixx="0.0001" iyy="0.000149" izz="4.9e-05" ixy="1e-06" iyz="0.0" ixz="3.6e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.105327 -0.047 0.01735" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/Bunny_Bottom_Leg_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.105327 -0.047 0.01735" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/Bunny_Bottom_Leg_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Bunny_Bottom_Leg_v1_Mirror__1">
+  <inertial>
+    <origin xyz="0.0050000690625209565 -0.004864950898295535 -0.05395632641844636" rpy="0 0 0"/>
+    <mass value="0.009"/>
+    <inertia ixx="0.0001" iyy="0.000149" izz="4.9e-05" ixy="-1e-06" iyz="-0.0" ixz="3.6e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.105327 0.037 0.01735" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/Bunny_Bottom_Leg_v1_Mirror__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.105327 0.037 0.01735" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/Bunny_Bottom_Leg_v1_Mirror__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Bunny_Bottom_v2_v2_1">
+  <inertial>
+    <origin xyz="-0.014970948038760631 0.009744609257807284 -0.03558687983130818" rpy="0 0 0"/>
+    <mass value="0.4"/>
+    <inertia ixx="0.000586" iyy="0.000354" izz="0.000558" ixy="0.0" iyz="-1e-06" ixz="-2.2e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.084527 0.005 -0.002431" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/Bunny_Bottom_v2_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.084527 0.005 -0.002431" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/Bunny_Bottom_v2_v2_1_3dless_com_simplified.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LegPart2_v1_1">
+  <inertial>
+    <origin xyz="0.022876578249581392 0.005939321398918514 -2.0360427089444189e-07" rpy="0 0 0"/>
+    <mass value="0.001"/>
+    <inertia ixx="1e-06" iyy="2.5e-05" izz="2.5e-05" ixy="-1e-06" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.09078 -0.0445 0.025296" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/LegPart2_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.09078 -0.0445 0.025296" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/LegPart2_v1_1_3dless_com_simplified.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LegPart4_v1_1">
+  <inertial>
+    <origin xyz="3.708903543279962e-07 0.0022499969920656768 -0.030667347115594483" rpy="0 0 0"/>
+    <mass value="0.001"/>
+    <inertia ixx="1.3e-05" iyy="1.3e-05" izz="0.0" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.02078 -0.0535 0.025296" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/LegPart4_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.02078 -0.0535 0.025296" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/LegPart4_v1_1_3dless_com_simplified.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LegPartFoot_v1_1">
+  <inertial>
+    <origin xyz="0.02133176156704069 -0.007500002219984758 0.002975322644036854" rpy="0 0 0"/>
+    <mass value="0.01"/>
+    <inertia ixx="2e-06" iyy="3e-05" izz="2.9e-05" ixy="0.0" iyz="0.0" ixz="-5e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.02078 -0.0535 0.095296" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/LegPartFoot_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.02078 -0.0535 0.095296" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/LegPartFoot_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LegPart2_v1__1__1">
+  <inertial>
+    <origin xyz="0.02287657824958156 -0.005939329464200636 -2.036042720844622e-07" rpy="0 0 0"/>
+    <mass value="0.001"/>
+    <inertia ixx="1e-06" iyy="2.5e-05" izz="2.5e-05" ixy="1e-06" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.09078 0.0345 0.025296" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/LegPart2_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.09078 0.0345 0.025296" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/LegPart2_v1__1__1_3dless_com_simplified.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LegPart4_v1__1__1">
+  <inertial>
+    <origin xyz="3.708903546159603e-07 -0.0022500050573467795 -0.030667347115595746" rpy="0 0 0"/>
+    <mass value="0.001"/>
+    <inertia ixx="1.3e-05" iyy="1.3e-05" izz="0.0" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.02078 0.0435 0.025296" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/LegPart4_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.02078 0.0435 0.025296" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/LegPart4_v1__1__1_3dless_com_simplified.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="LegPartFoot_v1__1__1">
+  <inertial>
+    <origin xyz="0.02133176156704094 0.007499994154704738 0.002975322644035952" rpy="0 0 0"/>
+    <mass value="0.01"/>
+    <inertia ixx="2e-06" iyy="3e-05" izz="2.9e-05" ixy="-0.0" iyz="-0.0" ixz="-5e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.02078 0.0435 0.095296" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/LegPartFoot_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.02078 0.0435 0.095296" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://_Compleat_Bunny_replica_v2_light_v5/meshes/LegPartFoot_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute 38" type="revolute">
+  <origin xyz="-0.046041 0.0005 0.003472" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Spine_joint_Component3_v1_1"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+  <limit upper="0.2" lower="-0.45" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 39" type="revolute">
+  <origin xyz="0.048924 0.0005 0.006039" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Spine_joint_Component5_v1_1"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+  <limit upper="0.45" lower="-0.2" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 40" type="revolute">
+  <origin xyz="-0.013995 0.0045 -0.000379" rpy="0 0 0"/>
+  <parent link="Spine_joint_Component3_v1_1"/>
+  <child link="Spine_joint_Component1_v1_1"/>
+  <axis xyz="-0.027031 -0.0 0.999635"/>
+  <limit upper="0.523599" lower="-0.523599" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 41" type="revolute">
+  <origin xyz="0.013995 0.0045 0.000379" rpy="0 0 0"/>
+  <parent link="Spine_joint_Component5_v1_1"/>
+  <child link="Spine_joint_Component6_v1_1"/>
+  <axis xyz="-0.027031 -0.0 0.999635"/>
+  <limit upper="0.523599" lower="-0.523599" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid 42" type="fixed">
+  <origin xyz="0.023992 -0.01 0.000649" rpy="0 0 0"/>
+  <parent link="Spine_joint_Component6_v1_1"/>
+  <child link="Top_v2_1"/>
+</joint>
+
+<joint name="Rigid 43" type="fixed">
+  <origin xyz="0.013994 0.0 0.000378" rpy="0 0 0"/>
+  <parent link="Top_v2_1"/>
+  <child link="Head_v1_1"/>
+</joint>
+
+<joint name="Rigid 46" type="fixed">
+  <origin xyz="-0.008555 -0.0025 0.004485" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="belly_right_v3_1"/>
+</joint>
+
+<joint name="Rigid 47" type="fixed">
+  <origin xyz="-0.008555 0.0125 0.004485" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="belly_left_v3_1"/>
+</joint>
+
+<joint name="Revolute 48" type="revolute">
+  <origin xyz="0.018416 0.052 -0.024417" rpy="0 0 0"/>
+  <parent link="Top_v2_1"/>
+  <child link="Bunny_Bottom_Leg_v1_1"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+  <limit upper="0.872665" lower="-0.872665" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 49" type="revolute">
+  <origin xyz="0.018416 -0.032 -0.024417" rpy="0 0 0"/>
+  <parent link="Top_v2_1"/>
+  <child link="Bunny_Bottom_Leg_v1_Mirror__1"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+  <limit upper="0.872665" lower="-0.872665" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid 50" type="fixed">
+  <origin xyz="-0.024491 -0.01 -0.000662" rpy="0 0 0"/>
+  <parent link="Spine_joint_Component1_v1_1"/>
+  <child link="Bunny_Bottom_v2_v2_1"/>
+</joint>
+
+<joint name="Revolute 51" type="revolute">
+  <origin xyz="-0.006253 0.0495 -0.027727" rpy="0 0 0"/>
+  <parent link="Bunny_Bottom_v2_v2_1"/>
+  <child link="LegPart2_v1_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+  <limit upper="0.610865" lower="-2.617994" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 52" type="revolute">
+  <origin xyz="0.07 0.009 0.0" rpy="0 0 0"/>
+  <parent link="LegPart2_v1_1"/>
+  <child link="LegPart4_v1_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+  <limit upper="1.134464" lower="-1.22173" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 53" type="revolute">
+  <origin xyz="0.0 0.0 -0.07" rpy="0 0 0"/>
+  <parent link="LegPart4_v1_1"/>
+  <child link="LegPartFoot_v1_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+  <limit upper="0.785398" lower="-1.047198" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 54" type="revolute">
+  <origin xyz="-0.006253 -0.0295 -0.027727" rpy="0 0 0"/>
+  <parent link="Bunny_Bottom_v2_v2_1"/>
+  <child link="LegPart2_v1__1__1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+  <limit upper="0.610865" lower="-2.617994" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 55" type="revolute">
+  <origin xyz="0.07 -0.009 0.0" rpy="0 0 0"/>
+  <parent link="LegPart2_v1__1__1"/>
+  <child link="LegPart4_v1__1__1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+  <limit upper="1.134464" lower="-1.22173" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 56" type="revolute">
+  <origin xyz="0.0 0.0 -0.07" rpy="0 0 0"/>
+  <parent link="LegPart4_v1__1__1"/>
+  <child link="LegPartFoot_v1__1__1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+  <limit upper="0.785398" lower="-1.134464" effort="100" velocity="100"/>
+</joint>
+
+</robot>

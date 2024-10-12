@@ -1,0 +1,9 @@
+<launch>
+
+<rosparam file="$(find _Compleat_Bunny_replica_v2_description)/launch/controller.yaml" command="load"/>
+<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="_Compleat_Bunny_replica_v2" args="Revolute 38_position_controller Revolute 39_position_controller Revolute 40_position_controller Revolute 41_position_controller Revolute 48_position_controller Revolute 49_position_controller Revolute 51_position_controller Revolute 52_position_controller Revolute 53_position_controller Revolute 54_position_controller Revolute 55_position_controller Revolute 56_position_controller joint_state_controller "/>
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+  <remap from="/joint_states" to="/_Compleat_Bunny_replica_v2/joint_states"/>
+</node>
+
+</launch>
