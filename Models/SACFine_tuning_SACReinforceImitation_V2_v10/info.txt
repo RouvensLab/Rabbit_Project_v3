@@ -1,0 +1,11 @@
+Model: SAC
+Model Name: Fine_tuning_SACReinforceImitation_V2_v10
+Number of CPUs: 20
+Total Timesteps: 40000000
+Env Parameters: {'ModelType': 'SAC', 'rewards_type': ['Modified_Peng_et_al_reward'], 'observation_type': ['joint_forces', 'joint_angles', 'euler_array', 'goal_orientation'], 'simulation_stepSize': 5, 'obs_time_space': 2, 'maxSteps': 1800, 'restriction_2D': False, 'terrain_type': 'random_terrain', 'recorded_movement_file_path_list': ['expert_trajectories\\fast_linear_springing_v1.json', 'expert_trajectories\\realy_fast_springing_v1.json'], 'change_body_params': {'Motors_strength': [8.8, 8.8, 2.2, 2.2, 2.2, 2.2, 2.2, 2.2, 8.8, 8.8, 2.2, 2.2], 'Motors_velocity': [1.0, 1.0, 4, 4, 4, 4, 4, 4, 1.0, 1.0, 4, 4]}}
+Seed: None
+
+Trained Model: Models\SACReinforceImitation_V2_v7\models\best_model.zip
+Load Replay Buffer: False
+Replay Buffer Directory: 
+Used_env_class_filename: force_imitation_v2

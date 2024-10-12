@@ -1,0 +1,7 @@
+Model: SAC
+Model Name: ReinforceImitation_V2_v8
+Number of CPUs: 30
+Total Timesteps: 50000000
+Env Parameters: {'ModelType': 'SAC', 'rewards_type': ['Modified_Peng_et_al_reward'], 'observation_type': ['joint_forces', 'joint_angles', 'euler_array', 'goal_orientation'], 'simulation_stepSize': 5, 'obs_time_space': 2, 'maxSteps': 1800, 'restriction_2D': False, 'terrain_type': 'flat', 'recorded_movement_file_path_list': ['expert_trajectories\\fast_linear_springing_v1.json', 'expert_trajectories\\slow_springing_v2.json', 'expert_trajectories\\fast_right_springing_v2.json', 'expert_trajectories\\fast_curve_springing_v2.json', 'expert_trajectories\\slow_left_springing_v2.json', 'expert_trajectories\\fast_left_springing_v2.json']}
+Hyperparameters: {'learning_rate': 5e-05, 'batch_size': 3000, 'buffer_size': 500000, 'policy_kwargs': {'net_arch': {'pi': [512, 256], 'qf': [512, 256]}}, 'gamma': 0.95}
+Used_env_class_filename: force_imitation_v2
