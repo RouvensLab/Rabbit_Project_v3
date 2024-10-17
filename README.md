@@ -1,4 +1,4 @@
-![Rabbit Project Logo](https://example.com/path/to/your/image.png)
+![Rabbit Project Logo](TitleImage.jpg)
 # Project Summary
 
 This project successfully replicates the anatomy of a dwarf rabbit in a robotic model. Through reinforcement learning (RL), specifically using SAC and PPO algorithms, the robot's locomotion and jumping acrobatics were trained in a realistic simulation. These movements were later tested on the physical robot, demonstrating mastery of basic movements, such as forward walking.
