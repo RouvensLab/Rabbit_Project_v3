@@ -7,7 +7,7 @@ This project successfully replicates the anatomy of a dwarf rabbit in a robotic 
 - A comparison of PPO and SAC algorithms revealed that SAC more efficiently mimicked the natural movements of a rabbit.
 - Different terrain types led to the robot learning varied locomotion strategies, offering fascinating insights into the adaptability of RL models.
 
-For more detailed findings, you can read the [corresponding paper here](#).
+For more detailed findings, you can read the [corresponding paper here](MA_2024_TechKaninchenNachbildung.pdf).
 
 ---
 
